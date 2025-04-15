@@ -24,13 +24,22 @@ const cartonData = {
   },
 };
 
-const user = {
-  name: "Joseph Barber",
-  email: "josephbarber@gmail.com",
-  password: "password",
-  age: 25
-}
-
-
-const {name, email} = user;
-console.log("User name is: " + name + ", email is: " + email);
+// const {createdIn, createdBy, title, famousCharacters, isAired} = cartonData;
+// console.log("Carton was created in " + createdIn + " by " + createdBy + " and is called " + title);
+// console.log("Famous characters are: " + famousCharacters);
+// console.log("Is the show aired? " + isAired);
+//
+//
+// const user = {
+//   name: "Joseph Barber",
+//   email: "josephbarber@gmail.com",
+//   password: "password",
+//   age: 25
+// }
+//
+//
+// const {name, email} = user;
+// console.log("User name is: " + name + ", email is: " + email);
+const {createdIn: year, createdBy: creator,  title: name, famousCharacters:characters} = cartonData;
+// console.log("Crarton was created in " + year + " by " + creator + " and is called " + name);
+console.log(characters);
